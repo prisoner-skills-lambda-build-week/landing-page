@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint:init": "eslint --init",
     "sass": "sass --watch src/styles:src/css",
-    "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
-    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,sass}' "
+    "fix-code": "prettier-eslint --write 'src/**/*.js' "
   },
   "author": "melissa murphy",
   "license": "ISC",
