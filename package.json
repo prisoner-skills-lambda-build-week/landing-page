@@ -1,0 +1,21 @@
+{
+  "name": "p-skills",
+  "version": "1.0.0",
+  "description": "Lambda build week project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint:init": "eslint --init",
+    "sass": "sass --watch src/styles:src/css",
+    "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,sass}' "
+  },
+  "author": "melissa murphy",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.12.0"
+  },
+  "dependencies": {}
+}
