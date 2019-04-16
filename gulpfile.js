@@ -5,17 +5,24 @@ const del = require('del');
 
 // Clean Public Directory
 function cleanDirectory() {
-    return del(['public/assets/'])
+    return del(['public/assets/', 'public/index.html'])
+}
+
+// Pipe HTML
+function pipeHtml() {
+    return gulp
+        .src('src/*.html')
+        .pipe(gulp.dest('public/'))
 }
 
 // Pack CSS
-function css() {
+function pipeCss() {
     return gulp
         .src('src/css/index.css')
         .pipe(gulp.dest('public/assets/'))
 }
 // Pack JS
-function concatScripts() {
+function concatJs() {
     return (
         gulp
             .src(['src/scripts/*.js'])
@@ -27,16 +34,17 @@ function concatScripts() {
 
 // Watch Files
 function watchFiles() {
-    gulp.watch('src/css/*', css);
-    gulp.watch('src/scripts/*', concatScripts);
+    gulp.watch('src/css/*', pipeCss);
+    gulp.watch('src/scripts/*', concatJs);
 }
 
 // Complex Tasks
-const build = gulp.series(cleanDirectory, gulp.parallel(css, concatScripts));
+const buildPublic = gulp.series(cleanDirectory, gulp.parallel(pipeHtml, pipeCss, concatJs));
 
 // Export Tasks
-exports.css = css;
-exports.concatScripts = concatScripts;
-exports.build = build;
+exports.pipeHtml = pipeHtml;
+exports.pipeCss = pipeCss;
+exports.concatJs = concatJs;
+exports.build = buildPublic;
 exports.watchFiles = watchFiles;
-exports.default = build;
+exports.default = buildPublic;
