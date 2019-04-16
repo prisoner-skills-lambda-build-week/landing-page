@@ -1,3 +1,8 @@
+console.log('Hello');
+
+// Nav Hamburger Menu
+
+
 class Navigation {
     constructor(navTemp) {
         this.navTemp = navTemp;
