@@ -9,7 +9,7 @@
     "sass": "sass --watch src/styles:src/assets/css",
     "fix-code": "prettier-eslint --write 'src/**/*.js' ",
     "gulp:buildPublic": "gulp",
-    "deploy": "gulp:buildPublic && firebase deploy"
+    "deploy": "yarn gulp:buildPublic && firebase deploy"
   },
   "author": "melissa murphy",
   "license": "ISC",
