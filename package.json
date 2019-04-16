@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint:init": "eslint --init",
-    "sass": "sass --watch src/styles:src/css",
-    "fix-code": "prettier-eslint --write 'src/**/*.js' "
+    "sass": "sass --watch src/styles:src/assets/css",
+    "fix-code": "prettier-eslint --write 'src/**/*.js' ",
+    "gulp:buildPublic": "gulp"
   },
   "author": "melissa murphy",
   "license": "ISC",
@@ -17,6 +18,10 @@
     "eslint-config-google": "^0.12.0"
   },
   "dependencies": {
-    "eslint-plugin-jsdoc": "^4.8.3"
+    "del": "^4.1.0",
+    "eslint-plugin-jsdoc": "^4.8.3",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1"
   }
 }
