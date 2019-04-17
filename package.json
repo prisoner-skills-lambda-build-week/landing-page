@@ -10,7 +10,7 @@
     "sassOnce": "sass src/styles:src/assets/css",
     "build": "gulp",
     "watch": "gulp watchFiles",
-    "deploy": "yarn sassOnce && yarn gulp:buildPublic && firebase deploy"
+    "deploy": "yarn sassOnce && yarn build && firebase deploy"
   },
   "author": "melissa murphy",
   "license": "ISC",
