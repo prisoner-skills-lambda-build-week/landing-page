@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint:init": "eslint --init",
     "sass": "sass --watch src/styles:src/assets/css",
-    "fix-code": "prettier-eslint --write 'src/**/*.js' ",
     "gulp:buildPublic": "gulp",
     "deploy": "yarn gulp:buildPublic && firebase deploy"
   },
