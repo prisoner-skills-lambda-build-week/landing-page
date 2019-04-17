@@ -8,8 +8,9 @@
     "eslint:init": "eslint --init",
     "sass": "sass --watch src/styles:src/assets/css",
     "sassOnce": "sass src/styles:src/assets/css",
+    "clean": "gulp clean",
     "build": "gulp",
-    "watch": "gulp watchFiles",
+    "watch": "gulp watch",
     "dev": "yarn sass && yarn watch",
     "deploy": "yarn sassOnce && yarn build && firebase deploy"
   },
