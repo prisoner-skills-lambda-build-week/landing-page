@@ -9115,7 +9115,16 @@ h6 {
 }
 
 .card {
-  padding: 1rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1088px) {
+  .card {
+    margin: 1rem;
+  }
+}
+
+figure.image.is1by3 {
+  max-height: 10rem;
 }
 
 /*# sourceMappingURL=index.css.map */

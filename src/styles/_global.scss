@@ -22,5 +22,8 @@ h6 {
 }
 
 .card {
-  padding: 1rem;
+  margin-bottom: 2rem;
+  @include desktop {
+    margin: 1rem;
+  }
 }
