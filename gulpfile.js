@@ -18,8 +18,8 @@ function pipeHtml() {
 // Pack CSS
 function pipeCss() {
     return gulp
-        .src('src/assets/css/index.css')
-        .pipe(gulp.dest('public/assets/css/'))
+        .src('src/assets/css/*.css')
+        .pipe(gulp.dest('public/assets/css/'));
 }
 // Pack JS
 function concatJs() {
