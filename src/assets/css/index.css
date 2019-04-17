@@ -9111,7 +9111,11 @@ h2, h4, h6 {
 }
 
 .height100 {
-  height: 100;
+  height: 100%;
+}
+
+.brand-image {
+  height: 8;
 }
 
 /*# sourceMappingURL=index.css.map */

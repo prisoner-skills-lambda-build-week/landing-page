@@ -23,19 +23,18 @@ function pipeCss() {
 }
 // Pack JS
 function concatJs() {
-    return (
-        gulp
-            .src(['src/assets/scripts/*.js'])
-            .pipe(plumber())
-            .pipe(concat('index.js'))
-            .pipe(gulp.dest('public/assets/scripts/'))
-    );
+    return gulp
+        .src(['src/assets/scripts/*.js'])
+        .pipe(plumber())
+        .pipe(concat(`index.js`))
+        .pipe(gulp.dest('public/'))
+        .pipe(gulp.dest('src/'));
 }
 
 // Watch Files
 function watchFiles() {
     gulp.watch('src/assets/css/*.css', pipeCss);
-    gulp.watch('src/assets/scripts/*.js', concatJs);
+    gulp.watch(['src/assets/scripts/*.js'], concatJs);
 }
 
 // Complex Tasks
