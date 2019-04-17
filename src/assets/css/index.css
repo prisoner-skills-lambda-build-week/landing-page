@@ -9123,8 +9123,15 @@ h6 {
   }
 }
 
-figure.image.is1by3 {
-  max-height: 10rem;
+.footer-image {
+  max-height: 5rem;
+  width: auto;
+}
+@media screen and (min-width: 1088px) {
+  .footer-image {
+    max-height: 10rem;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
