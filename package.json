@@ -7,8 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint:init": "eslint --init",
     "sass": "sass --watch src/styles:src/assets/css",
-    "gulp:buildPublic": "gulp",
-    "deploy": "yarn gulp:buildPublic && firebase deploy"
+    "sassOnce": "sass src/styles:src/assets/css",
+    "build": "gulp",
+    "watch": "gulp watchFiles",
+    "deploy": "yarn sassOnce && yarn gulp:buildPublic && firebase deploy"
   },
   "author": "melissa murphy",
   "license": "ISC",

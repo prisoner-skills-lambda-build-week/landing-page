@@ -1,24 +1,29 @@
 class Navigation {
-    constructor(navTemp) {
-        this.navTemp = navTemp;
-        this.navbarBurger = this.querySelector('.navbar-burger');
-        this.navbarItem = this.querySelectorAll('.navbar-item');
-        this.navbarBurger.addListener()
-    }// Methods
-    toggleNav() {
+  constructor(navTemp) {
+    this.navTemp = navTemp;
+    this.button = document.querySelector('a.navbar-burger');
+    this.content = document.querySelector('.navbar-menu');
 
-        let navbarBurger = this.navbarBurger;
-        navbarBurger.setAttribute('is-active', navbarBurger.getAttribute('is-active'));
-    }
+    // Event listener
+    this.button.addEventListener('click', () => {
+      console.log('clicked');
+      this.toggleNav();
+    });
+  } // Methods
+  toggleNav() {
+    this.button.classList.toggle('is-active');
+    this.toggleMenu();
+  }
+  toggleMenu() {
+    this.content.classList.toggle('is-active');
+    console.log('menu open');
+  }
 }
-// Testing
-let navbarBurger = document.querySelector('a.navbar-burger');
-addListener('click', () => {
-    navbarBurger.toggleAttribute('is-active')
-})
-
-
 
 // Navigation
 
-const navTemp = document.querySelector('.navbar');
+let navTemp = document.querySelectorAll('.navbar');
+console.log(navTemp);
+navTemp.forEach(navElement => {
+  return new Navigation(navTemp);
+});
