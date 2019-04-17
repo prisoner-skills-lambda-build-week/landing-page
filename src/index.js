@@ -22,8 +22,8 @@ class Navigation {
 
 // Navigation
 
-let navTemp = document.querySelectorAll('.navbar');
+const navTemp = document.querySelectorAll('.navbar');
 console.log(navTemp);
-navTemp.forEach(navElement => {
+navTemp.forEach((navElement) => {
   return new Navigation(navTemp);
 });
