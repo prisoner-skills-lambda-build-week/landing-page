@@ -8,24 +8,25 @@ class Card {
       ".card-footer .card-footer-item a.button"
     );
 
-    this.hiddenContent = this.expandButton.querySelector(
-      ".card-content p.is-hidden"
+    this.hiddenContent = this.expandButton.querySelectorAll(
+      ".card-content p"
     );
 
     this.expandButton.addEventListener("click", () => {
+        
       this.openCard();
     });
   } // Methods
   openCard() {
     event.preventDefault();
-    this.hiddenContent.classList.toggle("is-hidden");
+    let hiddenContent = this.hiddenContent;
+    Array.from(hiddenContent).forEach(hiddenContent => {
+        hiddenContent.classList.remove('is-hidden');
+    })
+
+    console.log(this.hiddenContent.classList);
   }
 }
-
-/* START HERE: 
-  - Select all classes named ".article" and assign that value to the articles variable.  
-  - With your selection in place, now chain .forEach() on to the articles variable to iterate over the articles NodeList and create a new instance of Article by passing in each article as a parameter to the Article class.
-  */
 
 let cards = document.querySelectorAll(".card");
 console.log(cards);

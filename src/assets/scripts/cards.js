@@ -8,17 +8,17 @@ class Card {
       ".card-footer .card-footer-item a.button"
     );
 
-    this.hiddenContent = this.expandButton.querySelector(
-      "p.is-hidden"
-    );
+    this.hiddenContent = this.expandButton.querySelectorAll(".card-content p.is-hidden");
 
-    this.expandButton.addEventListener("click", () => {
-      this.openCard();
+    this.cardItem.expandButton.addEventListener("click", () => {
+      this.cardItem.openCard();
     });
   } // Methods
   openCard() {
-    event.preventDefault();
-    this.hiddenContent.classList.toggle("is-hidden");
+    let hiddenContent = this.cardItem.hiddenContent;
+    Array.from(hiddenContent).forEach(hiddenContent => {
+      hiddenContent.classList.remove("is-hidden");
+    });
   }
 }
 
