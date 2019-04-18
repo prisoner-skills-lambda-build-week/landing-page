@@ -33,7 +33,7 @@ function pipeCssMap() {
 // Pack Images
 function packImages() {
   return gulp
-      .src(['src/assets/images/{*.png, *.jpg}'])
+      .src(['src/assets/images/*'])
       .pipe(gulp.dest('public/assets/images/'));
 }
 
