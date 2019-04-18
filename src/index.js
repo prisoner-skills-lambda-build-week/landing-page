@@ -1,3 +1,4 @@
+
 class Navigation {
   constructor(navTemp) {
     this.navTemp = navTemp;

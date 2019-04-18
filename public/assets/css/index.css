@@ -4684,7 +4684,7 @@ a.tag:hover {
 }
 
 .card {
-  background-color: white;
+  background-color: none;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #4a4a4a;
   max-width: 100%;
@@ -9115,7 +9115,23 @@ h6 {
 }
 
 .card {
-  padding: 1rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1088px) {
+  .card {
+    margin: 1rem;
+  }
+}
+
+.footer-image {
+  max-height: 5rem;
+  width: auto;
+}
+@media screen and (min-width: 1088px) {
+  .footer-image {
+    max-height: 10rem;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
