@@ -1,25 +1,48 @@
-// import { hidden } from "ansi-colors";
-
 class Card {
-  constructor(cardItem) {
-    this.cardItem = cardItem;
+  constructor(card) {
+    this.card = card;
 
-    this.expandButton = document.querySelectorAll('.card-footer .button');
+    this.newCard = new Card(this.card);
+  }
+}
 
-    this.expandButton.addEventListener("click", () => {
-      this.openCard();
-    });
-  } // Methods
-  openCard() {
-    const cardButton = this.expandButton;
+class CardContent extends Card {
+  constructor(cardContent) {
+    super(cardContent);
 
-    Array.from(cardButton).forEach(cardButton => {
-      cardButton.classList.toggle("is-hidden");
-    });
+    this.cardContent = this.card.querySelector(".card-content");
+    this.textContent = this.cardContent.querySelector("p");
+  }
+  toggleHidden() {
+    this.textContent.classList.toggle("is-hidden");
+    event.preventDefault();
+  }
+}
+
+class CardFooter extends CardContent {
+  constructor(cardFooter) {
+    super(cardFooter);
+
+    this.cardFooter = this.card.querySelector(".card-footer");
+    this.button = this.cardFooter.querySelector(".button");
+
+    this.button.addEventListener("click", () => this.toggleHidden());
   }
 }
 
 let cards = document.querySelectorAll(".card").forEach(card => new Card(card));
+
+// this.toggleButton = this.card.querySelectorAll(".card-footer button.button");
+// this.toggleButton.innerHTML = 'click for more';
+
+// this.toggleButton.addEventListener("click", () =>
+//   this.openCard());
+
+// } // Methods
+// openCard() {
+// this.card.classList.toggle('')
+// }
+// }
 
 class Navigation {
   constructor(navTemp) {
