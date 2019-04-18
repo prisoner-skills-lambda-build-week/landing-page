@@ -4,35 +4,22 @@ class Card {
   constructor(cardItem) {
     this.cardItem = cardItem;
 
-    this.expandButton = this.cardItem.querySelector(
-      ".card-footer .card-footer-item a.button"
-    );
-
-    this.hiddenContent = this.expandButton.querySelectorAll(
-      ".card-content p"
-    );
+    this.expandButton = document.querySelectorAll('.card-footer .button');
 
     this.expandButton.addEventListener("click", () => {
-        
       this.openCard();
     });
   } // Methods
   openCard() {
-    event.preventDefault();
-    let hiddenContent = this.hiddenContent;
-    Array.from(hiddenContent).forEach(hiddenContent => {
-        hiddenContent.classList.remove('is-hidden');
-    })
+    const cardButton = this.expandButton;
 
-    console.log(this.hiddenContent.classList);
+    Array.from(cardButton).forEach(cardButton => {
+      cardButton.classList.toggle("is-hidden");
+    });
   }
 }
 
-let cards = document.querySelectorAll(".card");
-console.log(cards);
-cards.forEach(card => {
-  return new Card(card);
-});
+let cards = document.querySelectorAll(".card").forEach(card => new Card(card));
 
 class Navigation {
   constructor(navTemp) {
