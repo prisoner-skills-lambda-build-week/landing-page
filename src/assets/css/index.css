@@ -9106,13 +9106,13 @@ label.panel-block:hover {
 h1,
 h3,
 h5 {
-  font-family: "Heebo", sans-serif;
+  font-family: "Slabo 13px", serif;
 }
 
 h2,
 h4,
 h6 {
-  font-family: "Slabo 13px", serif;
+  font-family: "Heebo", sans-serif;
 }
 
 .tile.is-child.card {
