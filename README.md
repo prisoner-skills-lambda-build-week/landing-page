@@ -1,23 +1,20 @@
-# Your Favicon Package
+# ReCareer
 
-This package was generated with [RealFaviconGenerator](https://realfavicongenerator.net/) [v0.16](https://realfavicongenerator.net/change_log#v0.16)
+## Introduction
 
-## Install instructions
+> A tool to connect newly skilled ex-offenders with meaningful work
+>
+>  a Lambda School project
 
-To install this package:
 
-Extract this package in the root of your web site. If your site is <code>http://www.example.com</code>, you should be able to access a file named <code>http://www.example.com/favicon.ico</code>.
 
-Insert the following code in the `head` section of your pages:
+## Installation
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#586ba4">
-    <meta name="apple-mobile-web-app-title" content="ReCareer">
-    <meta name="application-name" content="ReCareer">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#9ece9a">
-
-*Optional* - Check your favicon with the [favicon checker](https://realfavicongenerator.net/favicon_checker)
+> The dev environment is currently formulated for Yarn, but refactoring to NPM would be pretty simple.
+> Fork or clone, ```yarn``` in the console.
+> You're almost there! If you don't have/want Sass installed globally, you'll need to find a replacement transpire.
+>
+>
+>
+> Thanks for looking!
+ 
