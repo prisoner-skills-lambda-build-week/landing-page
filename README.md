@@ -12,7 +12,7 @@
 
 > The dev environment is currently formulated for Yarn, but refactoring to NPM would be pretty simple.
 > Fork or clone, ```yarn``` in the console.
-> You're almost there! If you don't have/want Sass installed globally, you'll need to find a replacement transpire.
+> You're almost there! If you don't have/want Sass installed globally, you'll need to find a replacement transpiler.
 >
 >
 >
