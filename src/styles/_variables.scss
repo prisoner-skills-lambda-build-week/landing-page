@@ -1,13 +1,13 @@
 //Import fonts
-@import url("https://fonts.googleapis.com/css?family=Heebo|Montserrat|Slabo+13px");
+@import url('https://fonts.googleapis.com/css?family=Heebo|Montserrat|Slabo+13px');
 // Custom Fonts
 // H(odd)
-$slabo: "Slabo 13px", serif;
+$slabo: 'Slabo 13px', serif;
 
 // H(even)
-$heebo: "Heebo", sans-serif;
+$heebo: 'Heebo', sans-serif;
 // Text
-$montserrat: "Montserrat", sans-serif;
+$montserrat: 'Montserrat', sans-serif;
 
 // Custom Colors
 $dark-cerulian: #083d77;
@@ -15,6 +15,9 @@ $blue-yonder: #586ba4;
 $isabelline: #f2f5ea;
 $metallic-seaweed: #077187;
 $eton-blue: #9ece9a;
+
+// Easings
+$easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 // // Bulma Overrides | commented out are initial
 $primary: $dark-cerulian;
