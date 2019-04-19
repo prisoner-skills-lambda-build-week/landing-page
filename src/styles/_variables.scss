@@ -1,0 +1,57 @@
+//Import fonts
+@import url('https://fonts.googleapis.com/css?family=Heebo|Montserrat|Slabo+13px');
+// Custom Fonts
+// H(odd)
+$slabo: 'Slabo 13px', serif;
+
+// H(even)
+$heebo: 'Heebo', sans-serif;
+// Text
+$montserrat: 'Montserrat', sans-serif;
+
+// Custom Colors
+$dark-cerulian: #083d77;
+$blue-yonder: #586ba4;
+$isabelline: #f2f5ea;
+$metallic-seaweed: #077187;
+$eton-blue: #9ece9a;
+
+// Easings
+$easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+// // Bulma Overrides | commented out are initial
+$primary: $dark-cerulian;
+$link: $blue-yonder;
+$info: $metallic-seaweed;
+$success: $eton-blue;
+// $warning: $yellow;
+// $danger: $red;
+// $dark: $grey-darker;
+// $text: $grey-dark;
+$background: $isabelline;
+// $family-primary: $family-sans-serif;
+
+// $body-background-color:	$white;
+// $body-size:	16px;
+// $body-rendering: optimizeLegibility;
+// $body-family:	$family-primary;
+$family-serif: $slabo;
+$family-sans-serif: $heebo;
+$family-primary: $montserrat;
+// $family-primary:	BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+// $body-color	$text;
+// $body-weight: $weight-normal;
+// $weight-normal:	400;
+// $body-line-height:	1.5;
+// $code-family: $family-code;
+// $family-code:	monospace;
+// $code-padding: 0.25em 0.5em 0.25em;
+// $code-weight:	normal;
+// $code-size: 0.875em;
+// $hr-background-color:$background;
+// $hr-height:	2px;
+// $hr-margin: 1.5rem 0;
+// $strong-color:	$text-strong;
+// $strong-weight:	$weight-bold;
+// $weight-bold:	700;
+$box-background-color: rgba(0, 0, 0, 0.5);

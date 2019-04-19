@@ -1,0 +1,8 @@
+.footer-image {
+  max-height: 5rem;
+  width: auto;
+  @include from($desktop) {
+    max-height: 10rem;
+    width: auto;
+  }
+}

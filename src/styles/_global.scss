@@ -1,0 +1,31 @@
+.nowrap {
+  white-space: nowrap;
+  hyphens: none;
+}
+.p-all {
+  padding: 1rem;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
+
+//.hr-is-color
+//// Make mixin to pull any color
+
+h1,
+h3,
+h5 {
+  font-family: $family-serif;
+}
+
+h2,
+h4,
+h6 {
+  font-family: $family-sans-serif;
+}
+// fix for cards not reaching bottom of tile element if shorter than others
+.tile.is-child.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

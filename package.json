@@ -6,20 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint:init": "eslint --init",
-    "sass": "sass --watch src/styles:src/assets/css",
-    "fix-code": "prettier-eslint --write 'src/**/*.js' ",
-    "gulp:buildPublic": "gulp"
+    "scss": "sass --watch src/styles:src/assets/css",
+    "scssOnce": "sass src/styles:src/assets/css",
+    "clean": "gulp clean",
+    "build": "gulp",
+    "watch": "gulp watch",
+    "dev": "yarn scss && yarn watch",
+    "deploy": "yarn scssOnce && yarn build && firebase deploy"
   },
   "author": "melissa murphy",
   "license": "ISC",
   "devDependencies": {
     "bulma": "^0.7.4",
-    "eslint": "^5.16.0",
-    "eslint-config-google": "^0.12.0"
+    "prettier": "1.17.0"
   },
   "dependencies": {
     "del": "^4.1.0",
-    "eslint-plugin-jsdoc": "^4.8.3",
+    "eslint": "^5.16.0",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1"
